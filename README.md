@@ -38,13 +38,16 @@ dsh plugin --profile desktop add dsh-envi
 dsh plugin --profile desktop add dsh-prompt-complete
 ```
 
-没有 npm 包时走源码安装：
+没有 npm 包时，用钉住 tag 的 tarball 地址（HTTP 下载，不依赖 git 传输，国内网络更稳）：
 
 ```bash
-dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-arcgispro
-dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-envi
-dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-prompt-complete
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-arcgispro/tar.gz/refs/tags/v0.1.0
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-prompt-complete/tar.gz/refs/tags/v1.0.0
 ```
+
+这三条已在空 profile 上实测通过（pnpm 12.21.0，输出 `+ dsh-arcgispro 0.1.0` 等）。
+每个仓库的 Release 页还挂了同一份 `.tgz` 附件。
 
 ## 维护
 
@@ -52,7 +55,7 @@ dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-prompt-complete
 改完用 DSH 自带的校验器验一遍：
 
 ```bash
-node -e "import('@deepseek-ai/dsh-plugin-market-index').then(m=>m.parseMarketIndex(JSON.parse(require('fs').readFileSync('market.json','utf8')),'https://example.com/market.json'))"
+node -e "import('@deepseek-ai/dsh-plugin-market-index').then(m=>{const j=JSON.parse(require('fs').readFileSync('market.json','utf8'));const r=m.parseMarketIndex(j,'https://haiwenxiang061-dev.github.io/dsh-plugins/market.json');console.log(r.plugins.length+' 个插件')})"
 ```
 
 ## 许可
