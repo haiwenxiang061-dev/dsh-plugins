@@ -79,11 +79,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794727994,
+          "publishTimestamp": 1794728951,
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-arcgispro",
-            "commit": "d77cde6ee9f5b3040ff1a50a9d10a423dd265e1c"
+            "commit": "4ca2fdb6140032358e5fb0c276d3a4eada83dfd3"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -124,11 +124,11 @@
       "versions": [
         {
           "version": "0.8.1",
-          "publishTimestamp": 1794727994,
+          "publishTimestamp": 1794728951,
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-envi",
-            "commit": "b7f6395b419543a5aab3b020e2b25df4bff58249"
+            "commit": "68ffedfc27be366a82ce3b4505776bbc70d3d587"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -168,11 +168,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794727995,
+          "publishTimestamp": 1794728952,
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete",
-            "commit": "e77116dea67c1dfb339d3264b6d130da13caf7ec"
+            "commit": "83377e8fbbd904679c5c08809d3ee7bb37ec9427"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
