@@ -38,7 +38,10 @@ dsh plugin --profile desktop add dsh-envi
 dsh plugin --profile desktop add dsh-prompt-complete
 ```
 
-没有 npm 包时，用钉住 tag 的 tarball 地址（HTTP 下载，不依赖 git 传输，国内网络更稳）：
+上面三条已在空 profile 上实测通过（pnpm 11.28.5，输出 `+ dsh-arcgispro 0.1.0` 等）。
+三个包都已在 npm 上发布，索引条目的 `source` 是 `{"type":"npm"}`。
+
+不走 npm 时改用钉住 tag 的 tarball 地址（HTTP 下载，不依赖 npm registry）：
 
 ```bash
 dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-arcgispro/tar.gz/refs/tags/v0.1.0
@@ -46,12 +49,11 @@ dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/
 dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-prompt-complete/tar.gz/refs/tags/v1.0.0
 ```
 
-这三条已在空 profile 上实测通过（pnpm 12.21.0，输出 `+ dsh-arcgispro 0.1.0` 等）。
 每个仓库的 Release 页还挂了同一份 `.tgz` 附件。
 
 ## 维护
 
-`market.json` 里每个版本的 `source.commit` 钉死到插件仓库的某个提交，升级时改 `version`、`publishTimestamp` 与 `commit` 三处。
+`market.json` 里每个版本是 `source: { "type": "npm" }`（不带 `url`/`commit`），升级时改 `version` 与 `publishTimestamp` 两处；只有临时回退到 GitHub 源码装时才需要把它改成 `{ "type": "git", "url": ..., "commit": <40 位 sha> }`。
 改完用 DSH 自带的校验器验一遍：
 
 ```bash
