@@ -19,10 +19,16 @@
 2. 切到 **发现** 标签，添加索引源：
 
 ```
+https://haiwenxiang061-dev.github.io/dsh-plugins/market.json
+```
+
+备用 CDN 地址（jsDelivr 对 `@main` 走长期缓存，索引更新后可能延迟数小时，所以只作兜底）：
+
+```
 https://cdn.jsdelivr.net/gh/haiwenxiang061-dev/dsh-plugins@main/market.json
 ```
 
-也可以加 GitHub Pages 或任意 https 静态地址；索引不允许重定向，必须写最终地址。
+索引不允许重定向，必须写最终地址。
 
 ## 直接安装（不用市场）
 
