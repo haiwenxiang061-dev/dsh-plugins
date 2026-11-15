@@ -38,15 +38,15 @@ dsh plugin --profile desktop add dsh-envi
 dsh plugin --profile desktop add dsh-prompt-complete
 ```
 
-上面三条已在空 profile 上实测通过（pnpm 11.28.5，输出 `+ dsh-arcgispro 0.1.0` 等）。
+上面三条已在空 profile 上实测通过（pnpm 11.28.5，输出 `+ dsh-arcgispro 0.1.1` 等）。
 三个包都已在 npm 上发布，索引条目的 `source` 是 `{"type":"npm"}`。
 
 不走 npm 时改用钉住 tag 的 tarball 地址（HTTP 下载，不依赖 npm registry）：
 
 ```bash
-dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-arcgispro/tar.gz/refs/tags/v0.1.0
-dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
-dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-prompt-complete/tar.gz/refs/tags/v1.0.0
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-arcgispro/tar.gz/refs/tags/v0.1.1
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.2
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-prompt-complete/tar.gz/refs/tags/v1.0.1
 ```
 
 每个仓库的 Release 页还挂了同一份 `.tgz` 附件。
