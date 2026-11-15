@@ -83,7 +83,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-arcgispro",
-            "commit": "f685f84c1ba122512f6c0a299fcf66107dbda564"
+            "commit": "b0262dd0b0336922176538d01f84a2b8a120d503"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -128,7 +128,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-envi",
-            "commit": "e078cc1bcbc95d6629ebc1daf6a0b3b95f8ba193"
+            "commit": "5e3136b0b47af670f32a193e42c2df5e8c7c77e6"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -172,7 +172,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete",
-            "commit": "5a86d72e5b05a20c5dd5c86e8c5cc626161837d3"
+            "commit": "29c5d36ce9cbebceb092c9ea7b5162c8e7d06a7f"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
