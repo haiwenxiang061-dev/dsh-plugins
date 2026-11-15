@@ -53,8 +53,8 @@
         "zh": "ArcGIS Pro 桥"
       },
       "description": {
-        "en": "Drive ArcGIS Pro from Harness through a persistent arcpy bridge: 87 tools over 1977 geoprocessing tools, .aprx projects, maps, layers, layouts, feature classes and licensing.",
-        "zh": "让 Harness 直接操作 ArcGIS Pro：常驻 arcpy 桥提供 87 个工具，覆盖 1977 个 GP 工具、.aprx 工程、地图、图层、布局出图、要素类与许可管理。"
+        "en": "Drive ArcGIS Pro from Harness through a persistent arcpy bridge: 87 tools over 1977 geoprocessing tools, .aprx projects, maps, layers, layouts and feature classes.",
+        "zh": "让 Harness 直接操作 ArcGIS Pro：常驻 arcpy 桥提供 87 个工具，覆盖 1977 个 GP 工具、.aprx 工程、地图、图层、布局出图与要素类。"
       },
       "author": "haiwenxiang061-dev",
       "homepage": "https://github.com/haiwenxiang061-dev/dsh-arcgispro#readme",
@@ -80,11 +80,9 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794728951,
+          "publishTimestamp": 1794732433,
           "source": {
-            "type": "git",
-            "url": "https://github.com/haiwenxiang061-dev/dsh-arcgispro",
-            "commit": "4ca2fdb6140032358e5fb0c276d3a4eada83dfd3"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -100,8 +98,8 @@
         "zh": "ENVI 遥感处理"
       },
       "description": {
-        "en": "Operate ENVI from Harness through its task engine: 26 tools over 295 ENVI tasks, plus the envi skill, the /envi-check command and unattended batch processing.",
-        "zh": "让 Harness 直接驱动 ENVI：26 个工具覆盖 295 个 ENVI 任务，附带 envi 技能、/envi-check 命令与无人值守批处理。"
+        "en": "Operate ENVI from Harness through its task engine: 26 tools over 295 ENVI tasks, plus the envi skill and unattended batch processing.",
+        "zh": "让 Harness 直接驱动 ENVI：26 个工具覆盖 295 个 ENVI 任务，附带 envi 技能与无人值守批处理。"
       },
       "author": "haiwenxiang061-dev",
       "homepage": "https://github.com/haiwenxiang061-dev/dsh-envi#readme",
@@ -126,11 +124,9 @@
       "versions": [
         {
           "version": "0.8.1",
-          "publishTimestamp": 1794728951,
+          "publishTimestamp": 1794732433,
           "source": {
-            "type": "git",
-            "url": "https://github.com/haiwenxiang061-dev/dsh-envi",
-            "commit": "68ffedfc27be366a82ce3b4505776bbc70d3d587"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
@@ -171,11 +167,9 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794728952,
+          "publishTimestamp": 1794732433,
           "source": {
-            "type": "git",
-            "url": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete",
-            "commit": "83377e8fbbd904679c5c08809d3ee7bb37ec9427"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
