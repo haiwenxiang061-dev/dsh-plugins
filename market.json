@@ -1,0 +1,184 @@
+{
+  "format": 1,
+  "title": {
+    "en": "haiwenxiang061-dev DSH plugins",
+    "zh": "haiwenxiang061-dev 的 DSH 插件"
+  },
+  "description": {
+    "en": "Plugins published by haiwenxiang061-dev: ArcGIS Pro and ENVI desktop GIS bridges, plus prompt completion for the composer.",
+    "zh": "haiwenxiang061-dev 发布的插件：ArcGIS Pro 与 ENVI 桌面 GIS 桥，以及输入框提示词完善。"
+  },
+  "metadata": {
+    "categories": {
+      "integrations": {
+        "title": {
+          "en": "Integrations",
+          "zh": "集成与连接"
+        }
+      },
+      "workflow": {
+        "title": {
+          "en": "Workflow & Automation",
+          "zh": "工作流与自动化"
+        }
+      }
+    },
+    "labels": {
+      "desktop-only": {
+        "title": {
+          "en": "Desktop software",
+          "zh": "桌面软件"
+        }
+      },
+      "windows": {
+        "title": {
+          "en": "Windows only",
+          "zh": "仅 Windows"
+        }
+      },
+      "no-external-deps": {
+        "title": {
+          "en": "No external dependencies",
+          "zh": "无外部依赖"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-arcgispro",
+      "title": {
+        "en": "ArcGIS Pro Bridge",
+        "zh": "ArcGIS Pro 桥"
+      },
+      "description": {
+        "en": "Drive ArcGIS Pro from Harness through a persistent arcpy bridge: 87 tools over 1977 geoprocessing tools, .aprx projects, maps, layers, layouts, feature classes and licensing.",
+        "zh": "让 Harness 直接操作 ArcGIS Pro：常驻 arcpy 桥提供 87 个工具，覆盖 1977 个 GP 工具、.aprx 工程、地图、图层、布局出图、要素类与许可管理。"
+      },
+      "author": "haiwenxiang061-dev",
+      "homepage": "https://github.com/haiwenxiang061-dev/dsh-arcgispro#readme",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/haiwenxiang061-dev/dsh-arcgispro"
+      },
+      "metadata": {
+        "category": "integrations",
+        "keywords": [
+          "arcgis-pro",
+          "arcpy",
+          "esri",
+          "geoprocessing",
+          "gis",
+          "map-layout"
+        ],
+        "labels": [
+          "desktop-only",
+          "windows"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794382238,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/haiwenxiang061-dev/dsh-arcgispro",
+            "commit": "f685f84c1ba122512f6c0a299fcf66107dbda564"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-envi",
+      "title": {
+        "en": "ENVI Remote Sensing",
+        "zh": "ENVI 遥感处理"
+      },
+      "description": {
+        "en": "Operate ENVI from Harness through its task engine: 26 tools over 295 ENVI tasks, plus the envi skill, the /envi-check command and unattended batch processing.",
+        "zh": "让 Harness 直接驱动 ENVI：26 个工具覆盖 295 个 ENVI 任务，附带 envi 技能、/envi-check 命令与无人值守批处理。"
+      },
+      "author": "haiwenxiang061-dev",
+      "homepage": "https://github.com/haiwenxiang061-dev/dsh-envi#readme",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/haiwenxiang061-dev/dsh-envi"
+      },
+      "metadata": {
+        "category": "integrations",
+        "keywords": [
+          "envi",
+          "remote-sensing",
+          "satellite-imagery",
+          "raster",
+          "gis"
+        ],
+        "labels": [
+          "desktop-only",
+          "windows"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.8.1",
+          "publishTimestamp": 1794382239,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/haiwenxiang061-dev/dsh-envi",
+            "commit": "e078cc1bcbc95d6629ebc1daf6a0b3b95f8ba193"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-prompt-complete",
+      "title": {
+        "en": "Prompt Complete",
+        "zh": "提示词完善"
+      },
+      "description": {
+        "en": "Rewrite the composer draft into a complete, precise prompt using the current conversation as context, then fill it back with a 12-second undo.",
+        "zh": "结合当前对话，把输入框里的草稿改写成一个完整、精确的提示词并回填，附带 12 秒撤销。"
+      },
+      "author": "haiwenxiang061-dev",
+      "homepage": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete#readme",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete"
+      },
+      "metadata": {
+        "category": "workflow",
+        "keywords": [
+          "prompt",
+          "prompt-engineering",
+          "rewrite",
+          "composer",
+          "productivity"
+        ],
+        "labels": [
+          "no-external-deps"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794726399,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/haiwenxiang061-dev/dsh-prompt-complete",
+            "commit": "5a86d72e5b05a20c5dd5c86e8c5cc626161837d3"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
